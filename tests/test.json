@@ -1,0 +1,50 @@
+{
+    "//": "Deidentified example",
+    "SecurityGroups": [
+        {
+            "IpPermissions": [
+                {
+                    "ToPort": 8080, 
+                    "IpProtocol": "tcp", 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "127.0.0.1/32"
+                        }, 
+                        {
+                            "CidrIp": "172.16.0.0/16"
+                        }, 
+                        {
+                            "CidrIp": "10.0.0.0/8"
+                        }, 
+                        {
+                            "CidrIp": "192.168.146.0/24"
+                        }
+                    ], 
+                    "UserIdGroupPairs": [], 
+                    "FromPort": 8080
+                }, 
+                {
+                    "ToPort": 8081, 
+                    "IpProtocol": "tcp", 
+                    "IpRanges": [
+                        {
+                            "CidrIp": "127.0.0.1/32"
+                        }, 
+                        {
+                            "CidrIp": "172.16.0.0/16"
+                        }, 
+                        {
+                            "CidrIp": "10.0.0.0/8"
+                        }, 
+                        {
+                            "CidrIp": "192.168.146.0/24"
+                        }
+                    ],
+                    "UserIdGroupPairs": [], 
+                    "FromPort": 8081
+                }
+            ], 
+            "GroupId": "sg-abcdef01"
+        } 
+    ]
+}
